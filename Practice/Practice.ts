@@ -37,14 +37,39 @@
   
 // }
 
-const  greet = (name:string):string => {
-  return `Welcome ${name}`;
+// const  greet = (name:string):string => {
+//   return `Welcome ${name}`;
   
-}
+// }
 
 // function greet(name:string):string{
 //  return `welcome ${name}`;
   
 // }
 
-greet('Aryan');
+// greet('Aryan');
+
+// function add<t>(a:t,b:t){
+    
+// }
+
+
+
+class boat{
+    color:string = 'red';
+
+    get getColor():string{
+      return `The color oh boat is ${this.color}`;
+    }
+
+    @testDecorator
+    pilot():void{
+      console.log("Hyyy");
+    }
+}
+
+function testDecorator(target:any,key:any):void{
+  console.log("Target: ",target);
+  console.log("Key: ", key);
+  
+}
